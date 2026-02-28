@@ -4,4 +4,5 @@
 /login/log/
 /bin/
 /Zip/
+/build/
 *.cs
