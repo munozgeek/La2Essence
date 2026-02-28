@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c832426-973b-4b8b-8f2e-ebdaeaa25a0b" name="Changes" comment="dev">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/Server.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/login/config/Server.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       <workItem from="1772243489800" duration="605000" />
       <workItem from="1772244505114" duration="8278000" />
       <workItem from="1772306450508" duration="228000" />
-      <workItem from="1772313435014" duration="2088000" />
+      <workItem from="1772313435014" duration="2859000" />
     </task>
     <task id="LOCAL-00001" summary="dev">
       <option name="closed" value="true" />
@@ -165,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772315409128</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="dev">
+      <option name="closed" value="true" />
+      <created>1772315537375</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772315537375</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
