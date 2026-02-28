@@ -1,6 +1,5 @@
 package net.sf.l2jdev.gameserver;
 
-import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -523,7 +522,6 @@ public class GameServer
 		LOGGER.info(this.getClass().getSimpleName() + ": Server loaded in " + (System.currentTimeMillis() - START_TIME) / 1000L + " seconds.");
 		new ConnectionManager<>(new InetSocketAddress(ServerConfig.PORT_GAME), GameClient::new, new GamePacketHandler());
 		LoginServerThread.getInstance().start();
-		Toolkit.getDefaultToolkit().beep();
 	}
 
 	private static void printSection(String section)

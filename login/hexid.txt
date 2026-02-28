@@ -1,4 +1,0 @@
-#The HexId to Auth into LoginServer
-#Thu Feb 26 20:07:39 GMT-03:00 2026
-HexID=4cc6600368b7a9e1d17acead59a607bc
-ServerID=1

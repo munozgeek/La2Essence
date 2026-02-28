@@ -5,7 +5,7 @@
 		<set name="hungry_limit" val="50" />
 		<set name="load" val="45540" />
 		<skills>
-			<skill minLevel="1" skillId="49185" skillLevel="8" /> <!-- Mercenary: Glassia -->
+			<skill minLevel="1" skillId="49185" skillLevel="8" /> <!-- Mercenary: Glassia  -->
 			<skill minLevel="1" skillId="49186" skillLevel="8" /> <!-- Glassia's Combat Mastery -->
 		</skills>
 		<stats>
