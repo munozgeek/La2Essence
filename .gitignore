@@ -3,4 +3,5 @@
 /game/log/
 /login/log/
 /bin/
+/Zip/
 *.cs
