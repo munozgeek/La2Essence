@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c832426-973b-4b8b-8f2e-ebdaeaa25a0b" name="Changes" comment="dev">
+      <change afterPath="$PROJECT_DIR$/tools/database_completo.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/config/General.ini" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/General.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/L2/La2Essence/game/config",
+    "last_opened_file_path": "C:/L2/La2Essence/tools",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +52,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\L2\La2Essence\tools" />
       <recent name="C:\L2\La2Essence\game\config" />
       <recent name="C:\L2\La2Essence\login\config" />
     </key>
@@ -88,7 +89,7 @@
       <workItem from="1772243489800" duration="605000" />
       <workItem from="1772244505114" duration="8278000" />
       <workItem from="1772306450508" duration="228000" />
-      <workItem from="1772313435014" duration="1797000" />
+      <workItem from="1772313435014" duration="1956000" />
     </task>
     <task id="LOCAL-00001" summary="dev">
       <option name="closed" value="true" />
@@ -146,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772314150272</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dev">
+      <option name="closed" value="true" />
+      <created>1772315253768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772315253768</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
