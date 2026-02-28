@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c832426-973b-4b8b-8f2e-ebdaeaa25a0b" name="Changes" comment="dev">
-      <change afterPath="$PROJECT_DIR$/tools/database_completo.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/Server.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/login/config/Server.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "dev",
@@ -89,7 +91,7 @@
       <workItem from="1772243489800" duration="605000" />
       <workItem from="1772244505114" duration="8278000" />
       <workItem from="1772306450508" duration="228000" />
-      <workItem from="1772313435014" duration="1956000" />
+      <workItem from="1772313435014" duration="2088000" />
     </task>
     <task id="LOCAL-00001" summary="dev">
       <option name="closed" value="true" />
@@ -155,11 +157,30 @@
       <option name="project" value="LOCAL" />
       <updated>1772315253768</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dev">
+      <option name="closed" value="true" />
+      <created>1772315409128</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772315409128</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dev" />
