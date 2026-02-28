@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c832426-973b-4b8b-8f2e-ebdaeaa25a0b" name="Changes" comment="dev">
-      <change afterPath="$PROJECT_DIR$/login/config/ipconfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/Server.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/config/hexid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/hexid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/config/ipconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/game/config/ipconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/config/Server.ini" beforeDir="false" afterPath="$PROJECT_DIR$/login/config/Server.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/config/ipconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/config/ipconfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/L2/La2Essence/login/config",
+    "last_opened_file_path": "C:/L2/La2Essence/game/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,8 +56,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\L2\La2Essence\login\config" />
       <recent name="C:\L2\La2Essence\game\config" />
+      <recent name="C:\L2\La2Essence\login\config" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -110,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772308618034</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dev">
+      <option name="closed" value="true" />
+      <created>1772309162056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772309162056</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
