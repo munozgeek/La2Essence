@@ -1056,12 +1056,7 @@
 		<effectRange>1200</effectRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="15">2</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1001" toSubLevel="1001">3</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1002" toSubLevel="1002">4</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1003" toSubLevel="1003">6</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -1424,7 +1419,7 @@
 		<effectPoint>-1980</effectPoint>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>60</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<mpConsume>
@@ -2476,12 +2471,7 @@
 		<effectRange>1200</effectRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="15">2</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1001" toSubLevel="1001">3</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1002" toSubLevel="1002">4</value>
-			<value fromLevel="1" toLevel="15" fromSubLevel="1003" toSubLevel="1003">6</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -2785,7 +2775,7 @@
 		<effectRange>1200</effectRange>
 		<hitTime>3500</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>15</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<mpConsume>
@@ -4305,7 +4295,7 @@
 		<coolTime>500</coolTime>
 		<hitTime>5500</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>40</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<mpConsume>150</mpConsume>

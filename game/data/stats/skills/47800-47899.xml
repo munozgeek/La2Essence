@@ -959,7 +959,7 @@
 		<effectRange>1100</effectRange>
 		<fanRange>0;0;600;60</fanRange>
 		<hitTime>400</hitTime>
-		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>40</magicLevel>
@@ -1051,7 +1051,7 @@
 		<effectRange>1100</effectRange>
 		<fanRange>0;0;600;60</fanRange>
 		<hitTime>400</hitTime>
-		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>40</magicLevel>
@@ -1148,7 +1148,7 @@
 		<basicProperty>NONE</basicProperty>
 		<coolTime>500</coolTime>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -1229,7 +1229,7 @@
 		<coolTime>500</coolTime>
 		<hitTime>1000</hitTime>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>
 			<value level="1">1</value>

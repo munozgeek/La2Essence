@@ -435,7 +435,7 @@
 		<effectPoint>150</effectPoint>
 		<hitTime>1500</hitTime>
 		<hpConsume>200</hpConsume>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>46</magicLevel>

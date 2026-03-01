@@ -163,10 +163,7 @@
 		</effectPoint>
 		<hitTime>1200</hitTime>
 		<isDebuff>true</isDebuff>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">1</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>

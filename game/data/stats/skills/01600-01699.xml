@@ -1120,12 +1120,7 @@
 		<effectPoint>0</effectPoint>
 		<hitTime>2000</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">1</value>
-			<value level="3">2</value>
-			<value level="4">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>
 			<value level="1">44</value>
@@ -1260,7 +1255,7 @@
 		<affectScope>PARTY</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<hitTime>2000</hitTime>
-		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -1381,7 +1376,7 @@
 		<effectRange>900</effectRange>
 		<hitTime>1000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -1721,7 +1716,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effectRange>400</effectRange>
 		<hitTime>2000</hitTime>
-		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>

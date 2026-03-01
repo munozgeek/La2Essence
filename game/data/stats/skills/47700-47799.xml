@@ -20,12 +20,7 @@
 		</effectPoint>
 		<effectRange>1400</effectRange>
 		<hitTime>2500</hitTime>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="2">0</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1001">1</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1002" toSubLevel="1002">2</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1003" toSubLevel="1003">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
