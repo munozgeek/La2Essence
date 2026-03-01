@@ -56,6 +56,7 @@ import net.sf.l2jdev.gameserver.model.spawns.SpawnTemplate;
 import net.sf.l2jdev.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2jdev.gameserver.network.serverpackets.TutorialCloseHtml;
 import net.sf.l2jdev.gameserver.network.serverpackets.TutorialShowQuestionMark;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -67,7 +68,7 @@ import org.w3c.dom.Node;
 public class ClassMaster extends Script implements IXmlReader
 {
 	private static final Logger LOGGER = Logger.getLogger(ClassMaster.class.getName());
-
+	
 	// NPCs
 	private static final List<Integer> CLASS_MASTERS = new ArrayList<>();
 	static
@@ -75,13 +76,13 @@ public class ClassMaster extends Script implements IXmlReader
 		CLASS_MASTERS.add(31756); // Mr. Cat
 		CLASS_MASTERS.add(31757); // Queen of Hearts
 	}
-
+	
 	// Misc
 	private boolean _isEnabled;
 	private boolean _spawnClassMasters;
 	private boolean _showPopupWindow;
 	private final List<ClassChangeData> _classChangeData = new LinkedList<>();
-
+	
 	public ClassMaster()
 	{
 		load();
@@ -89,22 +90,22 @@ public class ClassMaster extends Script implements IXmlReader
 		addTalkId(CLASS_MASTERS);
 		addFirstTalkId(CLASS_MASTERS);
 	}
-
+	
 	@Override
 	public void load()
 	{
 		_classChangeData.clear();
 		parseDatapackFile("config/ClassMaster.xml");
-
+		
 		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _classChangeData.size() + " class change options.");
 	}
-
+	
 	@Override
 	public boolean isValidating()
 	{
 		return false;
 	}
-
+	
 	@Override
 	public void parseDocument(Document document, File file)
 	{
@@ -123,7 +124,7 @@ public class ClassMaster extends Script implements IXmlReader
 						{
 							return;
 						}
-
+						
 						_spawnClassMasters = parseBoolean(attrs, "spawnClassMasters", true);
 						_showPopupWindow = parseBoolean(attrs, "showPopupWindow", false);
 						for (Node c = cm.getFirstChild(); c != null; c = c.getNextSibling())
@@ -153,12 +154,12 @@ public class ClassMaster extends Script implements IXmlReader
 													LOGGER.severe(getClass().getSimpleName() + ": Incorrect category type: " + r.getNodeValue());
 													continue;
 												}
-
+												
 												appliedCategories.add(category);
 											}
 										}
 									}
-
+									
 									if ("rewards".equals(b.getNodeName()))
 									{
 										for (Node r = b.getFirstChild(); r != null; r = r.getNextSibling())
@@ -194,19 +195,19 @@ public class ClassMaster extends Script implements IXmlReader
 										}
 									}
 								}
-
+								
 								if (appliedCategories.isEmpty())
 								{
 									LOGGER.warning(getClass().getSimpleName() + ": Class change option: " + optionName + " has no categories to be applied on. Skipping!");
 									continue;
 								}
-
+								
 								final ClassChangeData classChangeData = new ClassChangeData(optionName, appliedCategories);
 								classChangeData.setItemsRequired(requiredItems);
 								classChangeData.setItemsRewarded(rewardedItems);
 								classChangeData.setRewardHero(setHero);
 								classChangeData.setRewardNoblesse(setNoble);
-
+								
 								_classChangeData.add(classChangeData);
 							}
 						}
@@ -215,7 +216,7 @@ public class ClassMaster extends Script implements IXmlReader
 			}
 		}
 	}
-
+	
 	@Override
 	public void onSpawnActivate(SpawnTemplate template)
 	{
@@ -224,19 +225,19 @@ public class ClassMaster extends Script implements IXmlReader
 			template.spawnAllIncludingNotDefault(null);
 		}
 	}
-
+	
 	@Override
 	public void onSpawnDeactivate(SpawnTemplate template)
 	{
 		template.despawnAll();
 	}
-
+	
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
 		return "test_server_helper001.html";
 	}
-
+	
 	@Override
 	public String onEvent(String eventValue, Npc npc, Player player)
 	{
@@ -244,7 +245,7 @@ public class ClassMaster extends Script implements IXmlReader
 		{
 			return null;
 		}
-
+		
 		String htmltext = null;
 		String event = eventValue;
 		final StringTokenizer st = new StringTokenizer(event);
@@ -293,7 +294,7 @@ public class ClassMaster extends Script implements IXmlReader
 				{
 					return null;
 				}
-
+				
 				final int classId = Integer.parseInt(st.nextToken());
 				boolean canChange = false;
 				if ((player.isInCategory(CategoryType.SECOND_CLASS_GROUP) || player.isInCategory(CategoryType.FIRST_CLASS_GROUP)) && (player.getLevel() >= 40)) // In retail you can skip first occupation
@@ -308,7 +309,7 @@ public class ClassMaster extends Script implements IXmlReader
 				{
 					canChange = CategoryData.getInstance().isInCategory(CategoryType.FOURTH_CLASS_GROUP, classId);
 				}
-
+				
 				if (canChange)
 				{
 					int classDataIndex = -1;
@@ -316,7 +317,7 @@ public class ClassMaster extends Script implements IXmlReader
 					{
 						classDataIndex = Integer.parseInt(st.nextToken());
 					}
-
+					
 					if (checkIfClassChangeHasOptions(player) && (classDataIndex == -1))
 					{
 						htmltext = getHtm(player, "cc_options.html");
@@ -324,7 +325,7 @@ public class ClassMaster extends Script implements IXmlReader
 						htmltext = htmltext.replace("%options%", getClassChangeOptions(player, classId));
 						return htmltext;
 					}
-
+					
 					final ClassChangeData data = getClassChangeData(classDataIndex);
 					if (data != null)
 					{
@@ -339,13 +340,13 @@ public class ClassMaster extends Script implements IXmlReader
 									return null; // No class change if payment failed.
 								}
 							}
-
+							
 							for (ItemHolder ri : data.getItemsRequired())
 							{
 								player.destroyItemByItemId(ItemProcessType.FEE, ri.getId(), ri.getCount(), npc, true);
 							}
 						}
-
+						
 						// Give possible rewards.
 						if (!data.getItemsRewarded().isEmpty())
 						{
@@ -354,20 +355,20 @@ public class ClassMaster extends Script implements IXmlReader
 								giveItems(player, ri);
 							}
 						}
-
+						
 						// Give possible nobless status reward.
 						if (data.isRewardNoblesse())
 						{
 							player.setNoble(true);
 						}
-
+						
 						// Give possible hero status reward.
 						if (data.isRewardHero())
 						{
 							player.setHero(true);
 						}
 					}
-
+					
 					player.setPlayerClass(classId);
 					if (player.isSubClassActive())
 					{
@@ -377,12 +378,12 @@ public class ClassMaster extends Script implements IXmlReader
 					{
 						player.setBaseClass(player.getActiveClass());
 					}
-
+					
 					if (PlayerConfig.AUTO_LEARN_SKILLS)
 					{
 						player.giveAvailableSkills(PlayerConfig.AUTO_LEARN_FS_SKILLS, true, PlayerConfig.AUTO_LEARN_SKILLS_WITHOUT_ITEMS);
 					}
-
+					
 					player.store(false); // Save player cause if server crashes before this char is saved, he will lose class and the money payed for class change.
 					player.broadcastUserInfo();
 					player.sendSkillList();
@@ -408,7 +409,7 @@ public class ClassMaster extends Script implements IXmlReader
 				{
 					return null;
 				}
-
+				
 				if (clan.getLevel() >= 10)
 				{
 					htmltext = "test_server_helper022a.html";
@@ -429,10 +430,10 @@ public class ClassMaster extends Script implements IXmlReader
 				break;
 			}
 		}
-
+		
 		return htmltext;
 	}
-
+	
 	private static String getFirstOccupationChangeHtml(Player player)
 	{
 		String htmltext = null;
@@ -575,10 +576,10 @@ public class ClassMaster extends Script implements IXmlReader
 		{
 			htmltext = "test_server_helper011.html";
 		}
-
+		
 		return htmltext;
 	}
-
+	
 	private static String getSecondOccupationChangeHtml(Player player)
 	{
 		String htmltext = null;
@@ -813,10 +814,10 @@ public class ClassMaster extends Script implements IXmlReader
 		{
 			htmltext = "test_server_helper029.html";
 		}
-
+		
 		return htmltext;
 	}
-
+	
 	private boolean changeToNextClass(Player player)
 	{
 		final PlayerClass newClass = Arrays.stream(PlayerClass.values()).filter(cid -> player.getPlayerClass() == cid.getParent()).findAny().orElse(null);
@@ -849,7 +850,7 @@ public class ClassMaster extends Script implements IXmlReader
 					break;
 				}
 			}
-
+			
 			if (data != null)
 			{
 				// Required items.
@@ -863,13 +864,13 @@ public class ClassMaster extends Script implements IXmlReader
 							return false; // No class change if payment failed.
 						}
 					}
-
+					
 					for (ItemHolder ri : data.getItemsRequired())
 					{
 						player.destroyItemByItemId(ItemProcessType.FEE, ri.getId(), ri.getCount(), player, true);
 					}
 				}
-
+				
 				// Give possible rewards.
 				if (!data.getItemsRewarded().isEmpty())
 				{
@@ -878,20 +879,20 @@ public class ClassMaster extends Script implements IXmlReader
 						giveItems(player, ri);
 					}
 				}
-
+				
 				// Give possible nobless status reward.
 				if (data.isRewardNoblesse())
 				{
 					player.setNoble(true);
 				}
-
+				
 				// Give possible hero status reward.
 				if (data.isRewardHero())
 				{
 					player.setHero(true);
 				}
 			}
-
+			
 			player.setPlayerClass(newClass.getId());
 			if (player.isSubClassActive())
 			{
@@ -901,36 +902,33 @@ public class ClassMaster extends Script implements IXmlReader
 			{
 				player.setBaseClass(player.getActiveClass());
 			}
-
+			
 			if (PlayerConfig.AUTO_LEARN_SKILLS)
 			{
 				player.giveAvailableSkills(PlayerConfig.AUTO_LEARN_FS_SKILLS, true, PlayerConfig.AUTO_LEARN_SKILLS_WITHOUT_ITEMS);
 			}
-
+			
 			player.store(false); // Save player cause if server crashes before this char is saved, he will lose class and the money payed for class change.
 			player.broadcastUserInfo();
 			player.sendSkillList();
 			return true;
 		}
 	}
-
+	
 	private void showPopupWindow(Player player)
 	{
 		if (!_showPopupWindow)
 		{
 			return;
 		}
-
-		// @formatter:off
-		if ((player.isInCategory(CategoryType.FIRST_CLASS_GROUP) && (player.getLevel() >= 20)) ||
-			((player.isInCategory(CategoryType.SECOND_CLASS_GROUP) || player.isInCategory(CategoryType.FIRST_CLASS_GROUP)) && (player.getLevel() >= 40)) ||
-			(player.isInCategory(CategoryType.THIRD_CLASS_GROUP) && (player.getLevel() >= 76)))
-		// @formatter:on
+		
+		if ((player.isInCategory(CategoryType.FIRST_CLASS_GROUP) && (player.getLevel() >= 20)) || ((player.isInCategory(CategoryType.SECOND_CLASS_GROUP) || player.isInCategory(CategoryType.FIRST_CLASS_GROUP)) && (player.getLevel() >= 40)) || (player.isInCategory(CategoryType.THIRD_CLASS_GROUP) && (player.getLevel() >= 76)))
+		
 		{
 			player.sendPacket(new TutorialShowQuestionMark(102, 0));
 		}
 	}
-
+	
 	@RegisterEvent(EventType.ON_PLAYER_PRESS_TUTORIAL_MARK)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void onPlayerPressTutorialMark(OnPlayerPressTutorialMark event)
@@ -940,7 +938,7 @@ public class ClassMaster extends Script implements IXmlReader
 		{
 			return;
 		}
-
+		
 		String html = null;
 		if ((player.isInCategory(CategoryType.SECOND_CLASS_GROUP) || (player.isInCategory(CategoryType.FIRST_CLASS_GROUP) && (player.getRace() != Race.KAMAEL) && (player.getPlayerClass().getId() < 196))) && (player.getLevel() >= 40)) // In retail you can skip first occupation
 		{
@@ -954,13 +952,13 @@ public class ClassMaster extends Script implements IXmlReader
 		{
 			html = getHtm(player, "qm_thirdclass.html");
 		}
-
+		
 		if (html != null)
 		{
 			showResult(event.getPlayer(), html);
 		}
 	}
-
+	
 	@RegisterEvent(EventType.ON_PLAYER_BYPASS)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void onPlayerBypass(OnPlayerBypass event)
@@ -972,28 +970,28 @@ public class ClassMaster extends Script implements IXmlReader
 			showResult(event.getPlayer(), html);
 		}
 	}
-
+	
 	@RegisterEvent(EventType.ON_PLAYER_PROFESSION_CHANGE)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void onPlayerProfessionChange(OnPlayerProfessionChange event)
 	{
 		showPopupWindow(event.getPlayer());
 	}
-
+	
 	@RegisterEvent(EventType.ON_PLAYER_LEVEL_CHANGED)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void onPlayerLevelChanged(OnPlayerLevelChanged event)
 	{
 		showPopupWindow(event.getPlayer());
 	}
-
+	
 	@RegisterEvent(EventType.ON_PLAYER_LOGIN)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void onPlayerLogin(OnPlayerLogin event)
 	{
 		showPopupWindow(event.getPlayer());
 	}
-
+	
 	private String getClassChangeOptions(Player player, int selectedClassId)
 	{
 		final StringBuilder sb = new StringBuilder();
@@ -1004,7 +1002,7 @@ public class ClassMaster extends Script implements IXmlReader
 			{
 				continue;
 			}
-
+			
 			sb.append("<tr><td><img src=L2UI_CT1.ChatBalloon_DF_TopCenter width=276 height=1 /></td></tr>");
 			sb.append("<tr><td><table bgcolor=3f3f3f width=100%>");
 			sb.append("<tr><td align=center><a action=\"bypass -h Quest ClassMaster setclass " + selectedClassId + " " + i + "\">" + option.getName() + ":</a></td></tr>");
@@ -1025,12 +1023,12 @@ public class ClassMaster extends Script implements IXmlReader
 				{
 					sb.append("<tr><td><font color=\"LEVEL\">Noblesse status.</font></td></tr>");
 				}
-
+				
 				if (option.isRewardHero())
 				{
 					sb.append("<tr><td><font color=\"LEVEL\">Hero status.</font></td></tr>");
 				}
-
+				
 				if (!option.isRewardNoblesse() && !option.isRewardHero())
 				{
 					sb.append("<tr><td><font color=LEVEL>none</font></td></tr>");
@@ -1043,21 +1041,21 @@ public class ClassMaster extends Script implements IXmlReader
 				{
 					sb.append("<tr><td><font color=\"LEVEL\">Noblesse status.</font></td></tr>");
 				}
-
+				
 				if (option.isRewardHero())
 				{
 					sb.append("<tr><td><font color=\"LEVEL\">Hero status.</font></td></tr>");
 				}
 			}
-
+			
 			sb.append("</table></td></tr>");
 			sb.append("</table></td></tr>");
 			sb.append("<tr><td><img src=L2UI_CT1.ChatBalloon_DF_TopCenter width=276 height=1 /></td></tr>");
 		}
-
+		
 		return sb.toString();
 	}
-
+	
 	private static class ClassChangeData
 	{
 		private final String _name;
@@ -1066,23 +1064,23 @@ public class ClassMaster extends Script implements IXmlReader
 		private boolean _rewardHero;
 		private List<ItemHolder> _itemsRequired;
 		private List<ItemHolder> _itemsRewarded;
-
+		
 		public ClassChangeData(String name, List<CategoryType> appliedCategories)
 		{
 			_name = name;
 			_appliedCategories = appliedCategories != null ? appliedCategories : Collections.emptyList();
 		}
-
+		
 		public String getName()
 		{
 			return _name;
 		}
-
+		
 		public List<CategoryType> getCategories()
 		{
 			return _appliedCategories != null ? _appliedCategories : Collections.emptyList();
 		}
-
+		
 		public boolean isInCategory(Player player)
 		{
 			if (_appliedCategories != null)
@@ -1095,55 +1093,55 @@ public class ClassMaster extends Script implements IXmlReader
 					}
 				}
 			}
-
+			
 			return false;
 		}
-
+		
 		public boolean isRewardNoblesse()
 		{
 			return _rewardNoblesse;
 		}
-
+		
 		public void setRewardNoblesse(boolean rewardNoblesse)
 		{
 			_rewardNoblesse = rewardNoblesse;
 		}
-
+		
 		public boolean isRewardHero()
 		{
 			return _rewardHero;
 		}
-
+		
 		public void setRewardHero(boolean rewardHero)
 		{
 			_rewardHero = rewardHero;
 		}
-
+		
 		void setItemsRequired(List<ItemHolder> itemsRequired)
 		{
 			_itemsRequired = itemsRequired;
 		}
-
+		
 		public List<ItemHolder> getItemsRequired()
 		{
 			return _itemsRequired != null ? _itemsRequired : Collections.emptyList();
 		}
-
+		
 		void setItemsRewarded(List<ItemHolder> itemsRewarded)
 		{
 			_itemsRewarded = itemsRewarded;
 		}
-
+		
 		public List<ItemHolder> getItemsRewarded()
 		{
 			return _itemsRewarded != null ? _itemsRewarded : Collections.emptyList();
 		}
 	}
-
+	
 	private boolean checkIfClassChangeHasOptions(Player player)
 	{
 		boolean showOptions = false;
-
+		
 		// Check if there are requirements
 		for (ClassChangeData ccd : _classChangeData)
 		{
@@ -1153,7 +1151,7 @@ public class ClassMaster extends Script implements IXmlReader
 				break;
 			}
 		}
-
+		
 		if (!showOptions)
 		{
 			// Check if there is more than 1 reward to chose.
@@ -1165,26 +1163,26 @@ public class ClassMaster extends Script implements IXmlReader
 					count++;
 				}
 			}
-
+			
 			if (count > 1)
 			{
 				showOptions = true;
 			}
 		}
-
+		
 		return showOptions;
 	}
-
+	
 	private ClassChangeData getClassChangeData(int index)
 	{
 		if ((index >= 0) && (index < _classChangeData.size()))
 		{
 			return _classChangeData.get(index);
 		}
-
+		
 		return null;
 	}
-
+	
 	public static void main(String[] args)
 	{
 		new ClassMaster();

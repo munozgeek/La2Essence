@@ -36,7 +36,7 @@ import net.sf.l2jdev.gameserver.network.serverpackets.subjugation.ExSubjugationS
  */
 public class GoddardTerritoryPurge extends Script
 {
-	private static final int CATEGORY = 9;
+	private static final int CATEGORY = 5;
 	private static final int MAX_KEYS = 40;
 	private static final int PURGE_MAX_POINT = 1000000;
 	private static final SubjugationHolder PURGE_DATA = SubjugationData.getInstance().getSubjugation(CATEGORY);

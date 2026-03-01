@@ -1012,7 +1012,7 @@ public enum ExClientPackets
 	EX_COMBINATION_PROB_LIST(694, RequestCombinationProbList::new, ConnectionState.IN_GAME),
 	EX_RELICS_ID_SUMMON(695, RequestRelicsIdSummon::new, ConnectionState.IN_GAME),
 	EX_RELICS_SUMMON_LIST(696, RequestRelicsSummonList::new, ConnectionState.IN_GAME),
-	EX_RELICS_CONFIRM_COMBINATION(697, null, ConnectionState.IN_GAME),
+	EX_RELICS_CONFIRM_COMBINATION(697, RequestRelicsCombination::new, ConnectionState.IN_GAME),
 	EX_NEW_HENNA_POTEN_OPENSLOT_PROB_INFO(698, RequestNewHennaPotenOpenslotProbInfo::new, ConnectionState.IN_GAME),
 	EX_NEW_HENNA_POTEN_OPENSLOT(699, RequestNewHennaPotenOpenslot::new, ConnectionState.IN_GAME),
 	EX_DYEEFFECT_LIST(700, null, ConnectionState.IN_GAME),
