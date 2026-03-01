@@ -182,8 +182,10 @@
 					<item id="5304" min="1" max="1" chance="8.698" /> <!-- Sealed Tallum Tunic -->
 				</group>
 				<group chance="0.7343">
-					<item id="92480" min="1" max="1" chance="99.668" /> <!-- Leather -->
-					<item id="90045" min="1" max="1" chance="0.332" /> <!-- Magic Tablet -->
+					<item id="92480" min="1" max="1" chance="100" /> <!-- Leather -->
+				</group>
+				<group chance="5">
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 			</drop>
 		</dropLists>
@@ -557,8 +559,10 @@
 					<item id="5296" min="1" max="1" chance="53.241" /> <!-- Sealed Tallum Boots -->
 				</group>
 				<group chance="1.8576">
-					<item id="92481" min="1" max="1" chance="99.668" /> <!-- Cloth -->
-					<item id="90045" min="1" max="1" chance="0.332" /> <!-- Magic Tablet -->
+					<item id="92481" min="1" max="1" chance="100" /> <!-- Cloth -->
+				</group>
+				<group chance="5">
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 			</drop>
 		</dropLists>
