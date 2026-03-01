@@ -720,10 +720,7 @@
 		</effectPoint>
 		<effectRange>500</effectRange>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="10">1</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>
 			<value level="1">103</value>
@@ -827,10 +824,7 @@
 		</effectPoint>
 		<effectRange>500</effectRange>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="10">1</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>
 			<value level="1">103</value>
@@ -919,10 +913,7 @@
 		<coolTime>500</coolTime>
 		<effectRange>500</effectRange>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value level="1">30</value>
-			<value level="2">60</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>
 			<value level="1">200</value>
@@ -1106,7 +1097,7 @@
 		</effectPoint>
 		<effectRange>600</effectRange>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>
 			<value level="1">84</value>
@@ -1247,7 +1238,7 @@
 		<coolTime>500</coolTime>
 		<effectPoint>760</effectPoint>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>20</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -1664,7 +1655,7 @@
 		<coolTime>500</coolTime>
 		<effectPoint>760</effectPoint>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>100</mpConsume>
 		<reuseDelay>10000</reuseDelay>
@@ -1788,7 +1779,7 @@
 		<icon>icon.s_st_sacred_guardian</icon>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>30</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<reuseDelay>1000</reuseDelay>
 		<conditions>

@@ -137,12 +137,7 @@
 		<effectPoint>-405</effectPoint>
 		<effectRange>1200</effectRange>
 		<hitTime>2000</hitTime>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">0</value>
-			<value level="3">0</value>
-			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -270,11 +265,7 @@
 		</effectPoint>
 		<effectRange>900</effectRange>
 		<hitTime>3000</hitTime>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">0</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -412,11 +403,7 @@
 		</effectPoint>
 		<effectRange>1400</effectRange>
 		<hitTime>3000</hitTime>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">2</value>
-			<value fromLevel="2" toLevel="2" fromSubLevel="1002" toSubLevel="1002">2</value>
-			<value fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -555,11 +542,7 @@
 		</effectPoint>
 		<effectRange>1400</effectRange>
 		<hitTime>3000</hitTime>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">2</value>
-			<value fromLevel="2" toLevel="2" fromSubLevel="1002" toSubLevel="1002">2</value>
-			<value fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -776,11 +759,7 @@
 		<affectScope>SINGLE</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value level="1">2</value>
-			<value level="2">3</value>
-			<value level="3">4</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -865,11 +844,7 @@
 		<affectScope>SINGLE</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value level="1">2</value>
-			<value level="2">3</value>
-			<value level="3">4</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -946,11 +921,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1500</hitTime>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>
-			<value level="1">2</value>
-			<value level="2">3</value>
-			<value level="3">4</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3184,7 +3155,7 @@
 		<effectPoint>300</effectPoint>
 		<hitTime>1000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>30</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3251,7 +3222,7 @@
 		<effectRange>900</effectRange>
 		<hitTime>1000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>20</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3307,10 +3278,7 @@
 		<fanRange>0;0;600;50</fanRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="3">0</value>
-			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3482,10 +3450,7 @@
 		<fanRange>0;0;600;50</fanRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="3">0</value>
-			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3653,10 +3618,7 @@
 		<fanRange>0;0;600;50</fanRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="3">0</value>
-			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3796,10 +3758,7 @@
 		<fanRange>0;0;600;50</fanRange>
 		<hitTime>6000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="3">0</value>
-			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1003">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -5906,7 +5865,7 @@
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>0</effectPoint>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -5972,7 +5931,7 @@
 		<effectPoint>-900</effectPoint>
 		<hitTime>1500</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>8</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -6011,7 +5970,7 @@
 		<effectPoint>-900</effectPoint>
 		<hitTime>1500</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>8</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>

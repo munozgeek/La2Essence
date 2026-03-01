@@ -2925,11 +2925,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>
-			<value level="1">2</value>
-			<value level="2">4</value>
-			<value level="3">6</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>
 			<value level="1">76</value>
@@ -3126,13 +3122,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>4000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>
-			<value level="1">5</value>
-			<value level="2">5</value>
-			<value level="3">5</value>
-			<value level="4">6</value>
-			<value level="5">7</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3408,11 +3398,7 @@
 		<effectRange>1200</effectRange>
 		<hitTime>3000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>
-			<value level="1">4</value>
-			<value level="2">6</value>
-			<value level="3">8</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3947,7 +3933,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>6</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>

@@ -1614,7 +1614,7 @@
 		<affectScope>PARTY</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>100</effectPoint>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>105</mpConsume>
@@ -1695,7 +1695,7 @@
 		<hitTime>3000</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<lvlBonusRate>20</lvlBonusRate>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1828,7 +1828,7 @@
 		<effectPoint>-400</effectPoint>
 		<hitTime>4000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>100</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -1869,7 +1869,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>2000</hitTime>
 		<isMagic>2</isMagic>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>76</magicLevel>
 		<mpConsume>150</mpConsume>
@@ -2663,12 +2663,7 @@
 		<effectRange>400</effectRange>
 		<hitTime>1000</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="10">0</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1001" toSubLevel="1001">1</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1002" toSubLevel="1002">2</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1003" toSubLevel="1003">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>
 			<value level="1">76</value>

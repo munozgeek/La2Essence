@@ -1409,11 +1409,7 @@
 		<effectRange>900</effectRange>
 		<hitTime>4000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>
-			<value level="1">1</value>
-			<value level="2">2</value>
-			<value level="3">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<magicLevel>

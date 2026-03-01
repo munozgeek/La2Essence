@@ -205,7 +205,7 @@
 		<affectScope>POINT_BLANK</affectScope>
 		<hitTime>3000</hitTime>
 		<isMagic>1</isMagic>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>76</magicLevel>
 		<mpConsume>101</mpConsume>
@@ -234,7 +234,7 @@
 		<coolTime>900</coolTime>
 		<effectPoint>-6100</effectPoint>
 		<hitTime>2000</hitTime>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>82</mpConsume>
@@ -364,7 +364,7 @@
 		<coolTime>800</coolTime>
 		<effectRange>700</effectRange>
 		<hitTime>3000</hitTime>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>101</mpConsume>
@@ -466,10 +466,7 @@
 		<effectRange>1400</effectRange>
 		<hitTime>600</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>
-			<value level="1">50</value>
-			<value level="2">60</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>
@@ -593,10 +590,7 @@
 		<effectRange>1200</effectRange>
 		<hitTime>2000</hitTime>
 		<hpConsume>2000</hpConsume>
-		<itemConsumeCount>
-			<value level="1">10</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1003">15</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -660,7 +654,7 @@
 		<effectPoint>-6100</effectPoint>
 		<effectRange>1000</effectRange>
 		<hitTime>1300</hitTime>
-		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -743,12 +737,7 @@
 		<basicProperty>NONE</basicProperty>
 		<coolTime>500</coolTime>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>
-			<value level="1">3</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">7</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1002" toSubLevel="1002">11</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1003" toSubLevel="1003">15</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>85</magicLevel>
 		<mpConsume>146</mpConsume>
@@ -866,12 +855,7 @@
 		<effectPoint>-6100</effectPoint>
 		<hitTime>1300</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">3</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1002" toSubLevel="1002">6</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1003" toSubLevel="1003">9</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>85</magicLevel>
 		<mpConsume>112</mpConsume>
@@ -970,7 +954,7 @@
 		<effectPoint>-15000</effectPoint>
 		<hitTime>2500</hitTime>
 		<isDebuff>true</isDebuff>
-		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<lvlBonusRate>20</lvlBonusRate>
 		<magicLevel>90</magicLevel>
@@ -1083,7 +1067,7 @@
 		<effectPoint>50</effectPoint>
 		<hitTime>1000</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>250</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -2124,7 +2108,7 @@
 		<affectScope>SINGLE</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>800</effectPoint>
-		<itemConsumeCount>20</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -2287,12 +2271,7 @@
 		<effectRange>400</effectRange>
 		<hitTime>1000</hitTime>
 		<isMagic>0</isMagic>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="10">0</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1001" toSubLevel="1001">1</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1002" toSubLevel="1002">2</value>
-			<value fromLevel="1" toLevel="10" fromSubLevel="1003" toSubLevel="1003">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>
 			<value level="1">76</value>
@@ -2715,7 +2694,7 @@
 		<basicProperty>NONE</basicProperty>
 		<effectRange>900</effectRange>
 		<hitTime>500</hitTime>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -2836,7 +2815,7 @@
 		<basicProperty>NONE</basicProperty>
 		<effectRange>900</effectRange>
 		<hitTime>500</hitTime>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -2956,7 +2935,7 @@
 		<effectPoint>-2000</effectPoint>
 		<effectRange>400</effectRange>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>15</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3041,7 +3020,7 @@
 		<effectPoint>-2000</effectPoint>
 		<effectRange>400</effectRange>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>15</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3125,7 +3104,7 @@
 		<effectPoint>-2000</effectPoint>
 		<effectRange>500</effectRange>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>15</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3190,7 +3169,7 @@
 		<affectScope>SINGLE</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>800</effectPoint>
-		<itemConsumeCount>20</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -3641,7 +3620,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effectPoint>100</effectPoint>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>200</mpConsume>
@@ -3990,7 +3969,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effectPoint>100</effectPoint>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>76</magicLevel>
 		<mpConsume>200</mpConsume>
@@ -4299,7 +4278,7 @@
 		<abnormalType>LEGENDARY_ARCHER</abnormalType>
 		<abnormalVisualEffect>H_P_GHOSTA_AVE</abnormalVisualEffect>
 		<effectPoint>100</effectPoint>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>200</mpConsume>
 		<reuseDelay>10000</reuseDelay>
@@ -4622,7 +4601,7 @@
 		<abnormalType>LEGENDARY_ARCHER</abnormalType>
 		<abnormalVisualEffect>H_R_TRICKSTERA_AVE</abnormalVisualEffect>
 		<effectPoint>100</effectPoint>
-		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<mpConsume>200</mpConsume>
 		<reuseDelay>10000</reuseDelay>
@@ -4878,11 +4857,7 @@
 		<castRange>-1</castRange>
 		<hitTime>1500</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<itemConsumeCount>
-			<value level="1">4</value>
-			<value level="2">5</value>
-			<value level="3">6</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -5026,11 +5001,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitTime>2500</hitTime>
 		<isTriggeredSkill>true</isTriggeredSkill>
-		<itemConsumeCount>
-			<value level="1">8</value>
-			<value level="2">9</value>
-			<value level="3">10</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>

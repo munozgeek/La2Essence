@@ -380,12 +380,7 @@
 		<basicProperty>NONE</basicProperty>
 		<hitCancelTime>0.5</hitCancelTime>
 		<hitTime>1500</hitTime>
-		<itemConsumeCount>
-			<value level="1">10</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">10</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1002" toSubLevel="1002">15</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1003" toSubLevel="1003">15</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>76</magicLevel>
 		<mpConsume>41</mpConsume>

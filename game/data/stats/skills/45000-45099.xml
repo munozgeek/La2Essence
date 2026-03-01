@@ -2370,11 +2370,7 @@
 		<affectScope>SINGLE</affectScope>
 		<basicProperty>NONE</basicProperty>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">0</value>
-			<value level="3">10</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2837,7 +2833,7 @@
 		<irreplaceableBuff>true</irreplaceableBuff>
 		<isMagic>1</isMagic>
 		<isSharedWithSummon>false</isSharedWithSummon>
-		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>

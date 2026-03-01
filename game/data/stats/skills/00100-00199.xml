@@ -1000,11 +1000,7 @@
 		<effectPoint>0</effectPoint>
 		<hitCancelTime>0.5</hitCancelTime>
 		<hitTime>1000</hitTime>
-		<itemConsumeCount>
-			<value level="1">0</value>
-			<value level="2">0</value>
-			<value level="3">2</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<magicLevel>
 			<value level="1">20</value>
@@ -2150,13 +2146,7 @@
 			<value level="9">600</value> <!-- FIXME: AUTO GENERATED LEVEL -->
 			<value level="10">600</value> <!-- FIXME: AUTO GENERATED LEVEL -->
 		</hpConsume>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="6">2</value>
-			<value level="7">3</value>
-			<value level="8">3</value>
-			<value level="9">3</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-			<value level="10">3</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -3322,10 +3312,7 @@
 			<value level="7">500</value>
 			<value level="8">600</value>
 		</hpConsume>
-		<itemConsumeCount>
-			<value fromLevel="1" toLevel="6">2</value>
-			<value fromLevel="7" toLevel="8">3</value>
-		</itemConsumeCount>
+		<itemConsumeCount>0</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
